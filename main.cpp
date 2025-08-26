@@ -5,6 +5,7 @@
 #include "app.h"
 #include "test.h"
 #include "color.h"
+#include "utils.h"
 
 int main(int argc, char *argv[]) {
     printf(GRN "Meow world!\n\n" YEL);

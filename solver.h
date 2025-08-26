@@ -17,9 +17,7 @@ struct Equation {
     double a, b, c;
 };
 
-static double Epsilone = 1e-12;
 
 void solve(Equation eq, Solution *sol);
-bool isequal(double a, double b);
 
 #endif // SOLVER_H_

@@ -3,6 +3,8 @@
 #include <stdio.h>
 
 #include "solver.h"
+#include "utils.h"
+
 
 bool onetest(Test test) {
     Solution mysol = {};
@@ -25,12 +27,12 @@ bool onetest(Test test) {
 
 void alltest() {
     Test tests[] = {
-        { .eq = { .a = 0, .b =  0, .c = 0 }, .rightsol = { .rcnt = inf,   .x1 =  0, .x2 =  0 } },
-        { .eq = { .a = 0, .b =  0, .c = 1 }, .rightsol = { .rcnt = root0, .x1 =  0, .x2 =  0 } },
-        { .eq = { .a = 0, .b = -2, .c = 4 }, .rightsol = { .rcnt = root1, .x1 =  2, .x2 =  2 } },
-        { .eq = { .a = 1, .b =  1, .c = 1 }, .rightsol = { .rcnt = root0, .x1 =  0, .x2 =  0 } },
-        { .eq = { .a = 1, .b =  2, .c = 1 }, .rightsol = { .rcnt = root1, .x1 = -1, .x2 = -1 } },
-        { .eq = { .a = 1, .b =  3, .c = 2 }, .rightsol = { .rcnt = root2, .x1 = -1, .x2 = -2 } }
+        {.eq = {.a = 0, .b =  0, .c = 0 }, .rightsol = {.rcnt = inf,   .x1 =  0, .x2 =  0 }},
+        {.eq = {.a = 0, .b =  0, .c = 1 }, .rightsol = {.rcnt = root0, .x1 =  0, .x2 =  0 }},
+        {.eq = {.a = 0, .b = -2, .c = 4 }, .rightsol = {.rcnt = root1, .x1 =  2, .x2 =  2 }},
+        {.eq = {.a = 1, .b =  1, .c = 1 }, .rightsol = {.rcnt = root0, .x1 =  0, .x2 =  0 }},
+        {.eq = {.a = 1, .b =  2, .c = 1 }, .rightsol = {.rcnt = root1, .x1 = -1, .x2 = -1 }},
+        {.eq = {.a = 1, .b =  3, .c = 2 }, .rightsol = {.rcnt = root2, .x1 = -1, .x2 = -2 }}
     };
 
     size_t testsize = sizeof(tests)/sizeof(tests[0]);

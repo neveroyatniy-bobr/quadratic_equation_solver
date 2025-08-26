@@ -2,6 +2,8 @@
 
 #include <math.h>
 
+#include "utils.h"
+
 void solve(Equation eq, Solution *sol) {
     if (isequal(eq.a, 0)) {
             if (isequal(eq.b, 0)) {
@@ -33,8 +35,4 @@ void solve(Equation eq, Solution *sol) {
                 }
             }
         }
-}
-
-bool isequal(double a, double b) {
-    return fabs(a - b) < Epsilone;
 }
