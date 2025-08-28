@@ -1,7 +1,6 @@
-// #include <TXLib.h>
 #include <stdio.h>
-#include <windows.h>
 #include <assert.h>
+#include <string.h>
 
 #include "app.h"
 #include "test.h"
@@ -10,10 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
-
-    printf(GRN "Meow world!\n\n" YEL);
+    printf(BLU "Meow world!\n\n" YEL);
 
     const char *testarg = "--test";
     bool istest = false;

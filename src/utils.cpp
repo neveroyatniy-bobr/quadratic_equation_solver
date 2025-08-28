@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
+#include <memory.h>
 
 #include "color.h"
 
@@ -13,7 +14,8 @@ bool myisnan(double x)
 
 bool myisinf(double x)
 {
-    return x == 1.0 / 0.0;
+    double INF = INFINITY;
+    return memcmp(&x, &INF, sizeof(double));
 }
 
 bool isequal(double a, double b)

@@ -13,7 +13,7 @@ bool scantest(FILE *testfile, Test *test)
                     &((test->eq).a),
                     &((test->eq).b),
                     &((test->eq).c),
-                    &((test->rightsol).rcnt),
+                    (int*)&((test->rightsol).rcnt),
                     &((test->rightsol).x1),
                     &((test->rightsol).x2));
 }

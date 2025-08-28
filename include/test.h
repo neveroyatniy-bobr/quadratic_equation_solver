@@ -1,6 +1,8 @@
 #ifndef TEST_H_
 #define TEST_H_
 
+#include <stdio.h>
+
 #include "solver.h"
 
 struct Test
@@ -9,6 +11,7 @@ struct Test
     Solution rightsol;
 };
 
+bool scantest(FILE *testfile, Test *test);
 bool onetest(Test test);
 void alltest();
 
