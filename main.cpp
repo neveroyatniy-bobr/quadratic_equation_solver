@@ -1,36 +1,39 @@
-//#include <TXLib.h>
+// #include <TXLib.h>
 #include <stdio.h>
 #include <windows.h>
+#include <assert.h>
 
 #include "app.h"
 #include "test.h"
 #include "color.h"
 #include "utils.h"
 
-int main(int argc, char *argv[]) {
-    printf(GRN "Meow world!\n\n" YEL);
+int main(int argc, char *argv[])
+{
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
 
-    SetConsoleOutputCP(1251);
-    SetConsoleCP(1251);
+    printf(GRN "Meow world!\n\n" YEL);
 
     const char *testarg = "--test";
     bool istest = false;
-    for (int i = 0; i < argc; i++) {
-        if (strcmp(argv[i], testarg) == 0) {
+    for (int i = 0; i < argc; i++)
+    {
+        if (strcmp(argv[i], testarg) == 0)
+        {
             istest = true;
         }
     }
 
-    if (istest) {
+    if (istest)
+    {
         alltest();
-    } else {
+    }
+    else
+    {
         app();
     }
 
     printf(BRED "\n!!! COMMIT GITHUB !!!\n" reset);
     return 0;
 }
-
-//ansicolorcodes
-
-

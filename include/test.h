@@ -3,7 +3,8 @@
 
 #include "solver.h"
 
-struct Test {
+struct Test
+{
     Equation eq;
     Solution rightsol;
 };
