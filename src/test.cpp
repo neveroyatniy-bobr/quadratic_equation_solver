@@ -5,30 +5,30 @@
 #include "solver.h"
 #include "utils.h"
 
-bool scantest(FILE *testfile, Test *test)
+bool ScanTest(FILE *test_file, Test *test)
 {
     return 6 == fscanf(
-                    testfile,
+                    test_file,
                     "%lf %lf %lf %d %lf %lf",
                     &((test->eq).a),
                     &((test->eq).b),
                     &((test->eq).c),
-                    (int*)&((test->rightsol).rcnt),
-                    &((test->rightsol).x1),
-                    &((test->rightsol).x2));
+                    (int*)&((test->right_sol).root_count),
+                    &((test->right_sol).x1),
+                    &((test->right_sol).x2));
 }
 
-bool onetest(Test test)
+bool OneTest(Test test)
 {
-    Solution mysol = {};
-    solve(test.eq, &mysol);
+    Solution my_sol = {};
+    Solve(test.eq, &my_sol);
 
     bool ans = true;
-    if (mysol.rcnt == test.rightsol.rcnt)
+    if (my_sol.root_count == test.right_sol.root_count)
     {
-        if (mysol.rcnt == root1 || mysol.rcnt == root2)
+        if (my_sol.root_count == root1 || my_sol.root_count == root2)
         {
-            if (!(isequal(mysol.x1, test.rightsol.x1)) || !(isequal(mysol.x2, test.rightsol.x2)))
+            if (!(IsEqual(my_sol.x1, test.right_sol.x1)) || !(IsEqual(my_sol.x2, test.right_sol.x2)))
             {
                 ans = false;
             }
@@ -42,13 +42,13 @@ bool onetest(Test test)
     return ans;
 }
 
-void alltest()
+void AllTest()
 {
-    FILE *testfile = fopen("data/tests.txt", "r");
+    FILE *test_file = fopen("data/tests.txt", "r");
     Test test = {};
-    while (scantest(testfile, &test))
+    while (ScanTest(test_file, &test))
     {
-        if (onetest(test))
+        if (OneTest(test))
         {
             printf("OK\n");
         }
@@ -57,5 +57,5 @@ void alltest()
             printf("ERROR\n");
         }
     }
-    fclose(testfile);
+    fclose(test_file);
 }

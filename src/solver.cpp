@@ -4,60 +4,60 @@
 
 #include "utils.h"
 
-void linearsolve(Equation eq, Solution *sol)
+void LinearSolve(Equation eq, Solution *sol)
 {
-    if (isequal(eq.b, 0))
+    if (IsEqual(eq.b, 0))
     {
-        if (isequal(eq.c, 0))
+        if (IsEqual(eq.c, 0))
         {
-            sol->rcnt = inf;
+            sol->root_count = inf;
         }
         else
         {
-            sol->rcnt = root0;
+            sol->root_count = root0;
         }
     }
     else
     {
-        sol->rcnt = root1;
+        sol->root_count = root1;
         sol->x1 = -eq.c / eq.b;
         sol->x2 = sol->x1;
     }
 }
 
-void quadraticsolve(Equation eq, Solution *sol)
+void QuadraticSolve(Equation eq, Solution *sol)
 {
     double D = eq.b * eq.b - 4 * eq.a * eq.c;
     if (D < 0)
     {
-        sol->rcnt = root0;
+        sol->root_count = root0;
     }
     else
     {
-        if (isequal(D, 0))
+        if (IsEqual(D, 0))
         {
-            sol->rcnt = root1;
+            sol->root_count = root1;
             sol->x1 = -eq.b / (2 * eq.a);
             sol->x2 = sol->x1;
         }
         else
         {
-            sol->rcnt = root2;
-            double sqrtD = sqrt(D);
-            sol->x1 = (-eq.b + sqrtD) / (2 * eq.a);
-            sol->x2 = (-eq.b - sqrtD) / (2 * eq.a);
+            sol->root_count = root2;
+            double sqrt_D = sqrt(D);
+            sol->x1 = (-eq.b + sqrt_D) / (2 * eq.a);
+            sol->x2 = (-eq.b - sqrt_D) / (2 * eq.a);
         }
     }
 }
 
-void solve(Equation eq, Solution *sol)
+void Solve(Equation eq, Solution *sol)
 {
-    if (isequal(eq.a, 0))
+    if (IsEqual(eq.a, 0))
     {
-        linearsolve(eq, sol);
+        LinearSolve(eq, sol);
     }
     else
     {
-        quadraticsolve(eq, sol);
+        QuadraticSolve(eq, sol);
     }
 }

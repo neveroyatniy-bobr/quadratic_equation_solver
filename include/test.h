@@ -8,11 +8,13 @@
 struct Test
 {
     Equation eq;
-    Solution rightsol;
+    Solution right_sol;
 };
 
-bool scantest(FILE *testfile, Test *test);
-bool onetest(Test test);
-void alltest();
+bool ScanTest(FILE *test_file, Test *test);
+
+bool OneTest(Test test);
+
+void AllTest();
 
 #endif // TEST_H_

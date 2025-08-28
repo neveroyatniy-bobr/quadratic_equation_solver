@@ -4,7 +4,7 @@
 
 #include "solver.h"
 
-void clearbuffer()
+void ClearBuffer()
 {
     int ch = 0;
     while ((ch = getchar()) != '\n' && ch != EOF)
@@ -12,20 +12,20 @@ void clearbuffer()
     }
 }
 
-void input(Equation *eq)
+void Input(Equation *eq)
 {
     printf("Введите коэфиценты уравнения через пробел: ");
     while (scanf("%lf %lf %lf", &(eq->a), &(eq->b), &(eq->c)) != 3)
     {
-        clearbuffer();
+        ClearBuffer();
         printf("Попробуйте еще раз, если не хотите решать уравнение введите 0 0 0\n");
         printf("Введите коэфиценты уравнения через пробел: ");
     }
 }
 
-void output(Solution sol)
+void Output(Solution sol)
 {
-    switch (sol.rcnt)
+    switch (sol.root_count)
     {
     case root0:
         printf("У этого уравнения нет корней\n");

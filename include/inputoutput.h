@@ -3,8 +3,10 @@
 
 #include "solver.h"
 
-void clearbuffer();
-void input(Equation *eq);
-void output(Solution sol);
+void ClearBuffer();
+
+void Input(Equation *eq);
+
+void Output(Solution sol);
 
 #endif // INPUTOUTPUT_H_

@@ -6,28 +6,48 @@
 #include "test.h"
 #include "color.h"
 #include "utils.h"
+#include "cmdargpr.h"
+#include "cmdsolve.h"
+#include "fsolve.h"
 
 int main(int argc, char *argv[])
 {
-    printf(BLU "Meow world!\n\n" YEL);
+    printf(GRN "Meow world!\n\n" YEL);
 
-    const char *testarg = "--test";
-    bool istest = false;
-    for (int i = 0; i < argc; i++)
-    {
-        if (strcmp(argv[i], testarg) == 0)
-        {
-            istest = true;
-        }
-    }
+    WorkingMode working_mode = (WorkingMode)0;
+    working_mode = CmdArgProcessor(argc, argv);
 
-    if (istest)
+    switch (working_mode)
     {
-        alltest();
-    }
-    else
-    {
-        app();
+    case ui:
+        App();
+        break;
+
+    case test:
+        AllTest();
+        break;
+
+    case cmd_sol:
+        CmdSolve(argv);
+        break;
+
+    case file:
+        FileSolve(argv);
+        break;
+
+    case help:
+        printf("--test, -t: вызвать юнит-тесты Solve()\n\
+                --CmdSolve a b c, -c a b c: сразу решить уравнение с коэфицентами a, b, c\
+                --file filename, -f filename: решить уравнения из файла");
+        break;
+
+    case hint:
+        printf("Неправильные аргументы, используйте флаг --help или -h для информации об остальных флагах\n");
+        break;
+
+    default:
+        printf("Ого......");
+        break;
     }
 
     printf(BRED "\n!!! COMMIT GITHUB !!!\n" reset);

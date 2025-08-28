@@ -1,7 +1,8 @@
 #ifndef APP_H_
 #define APP_H_
 
-void app();
-void try_to_leave();
+void App();
+
+void TryToLeave();
 
 #endif // APP_H_

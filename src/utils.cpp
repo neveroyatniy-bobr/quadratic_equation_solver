@@ -7,18 +7,27 @@
 
 #include "color.h"
 
-bool myisnan(double x)
+void Assert(bool condition, const char *file, int line)
+{
+    if (!condition)
+    {
+        printf(RED "Assertation error in %s %d\n" reset, file, line);
+        abort();
+    }
+}
+
+bool MyIsNan(double x)
 {
     return !(x == x);
 }
 
-bool myisinf(double x)
+bool MyIsInf(double x)
 {
     double INF = INFINITY;
     return memcmp(&x, &INF, sizeof(double));
 }
 
-bool isequal(double a, double b)
+bool IsEqual(double a, double b)
 {
-    return fabs(a - b) < Epsilone;
+    return fabs(a - b) < EPSILONE;
 }

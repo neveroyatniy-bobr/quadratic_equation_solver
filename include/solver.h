@@ -11,7 +11,7 @@ enum Rootcount
 
 struct Solution
 {
-    Rootcount rcnt;
+    Rootcount root_count;
     double x1, x2;
 };
 
@@ -20,10 +20,10 @@ struct Equation
     double a, b, c;
 };
 
-void solve(Equation eq, Solution *sol);
+void Solve(Equation eq, Solution *sol);
 
-void linearsolve(Equation eq, Solution *sol);
+void LinearSolve(Equation eq, Solution *sol);
 
-void quadraticsolve(Equation eq, Solution *sol);
+void QuadraticSolve(Equation eq, Solution *sol);
 
 #endif // SOLVER_H_

@@ -7,7 +7,7 @@
 
 static bool run = true;
 
-void try_to_leave()
+void TryToLeave()
 {
     printf("Нажмите q если хотете выйти и что угодно, если нет: ");
     char quit_check = 0;
@@ -18,23 +18,23 @@ void try_to_leave()
             run = false;
         }
     }
-    clearbuffer();
+    ClearBuffer();
 }
 
-void app()
+void App()
 {
     while (run)
     {
         Equation eq = {};
         Solution sol = {};
 
-        input(&eq);
+        Input(&eq);
 
-        solve(eq, &sol);
+        Solve(eq, &sol);
 
-        output(sol);
+        Output(sol);
 
-        try_to_leave();
+        TryToLeave();
     }
 
 }
