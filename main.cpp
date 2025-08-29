@@ -50,6 +50,6 @@ int main(int argc, char *argv[])
         break;
     }
 
-    printf(BRED "\n!!! COMMIT GITHUB !!!\n" reset);
+    printf(GRN "\nThe end.\n" reset);
     return 0;
 }
