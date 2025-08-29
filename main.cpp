@@ -47,10 +47,6 @@ int main(int argc, char *argv[])
         printf("Неправильные аргументы, используйте флаг --help или -h для информации об остальных флагах\n");
         break;
     
-    case gui:
-        printf("Comming soon");
-        break;
-    
     default:
         printf("Ого......");
         break;
