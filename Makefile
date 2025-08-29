@@ -11,8 +11,3 @@ $(MY_PROGRAM) : $(CPP) main.cpp
 
 doxygen :
 	doxygen docs/Doxyfile
-
-git :
-	git add .
-	git commit -m "Быстрый коммит всех файлов"
-	git push
