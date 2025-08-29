@@ -10,6 +10,8 @@
 #include "cmdsolve.h"
 #include "fsolve.h"
 
+//проверка git
+
 int main(int argc, char *argv[])
 {
     printf(GRN "Meow world!\n\n" YEL);
