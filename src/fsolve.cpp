@@ -7,7 +7,7 @@
 
 bool ScanEquation(FILE *test_file, Equation *eq)
 {
-    return 6 == fscanf(
+    return 3 == fscanf(
                     test_file,
                     "%lf %lf %lf",
                     &(eq->a),

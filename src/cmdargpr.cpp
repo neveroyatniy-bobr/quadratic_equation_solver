@@ -26,6 +26,10 @@ enum WorkingMode CmdArgProcessor(int argc, char *argv[])
         {
             return argc == 2 ? help : hint;
         }
+        else if (!strcmp(argv[1], "--grafics") || !strcmp(argv[1], "-g"))
+        {
+            return argc == 2 ? gui : hint;
+        }
         else
         {
             return hint;

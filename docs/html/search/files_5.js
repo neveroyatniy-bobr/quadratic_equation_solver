@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['solver_2ecpp_0',['solver.cpp',['../solver_8cpp.html',1,'']]],
-  ['solver_2eh_1',['solver.h',['../solver_8h.html',1,'']]]
+  ['main_2ecpp_0',['main.cpp',['../main_8cpp.html',1,'']]]
 ];

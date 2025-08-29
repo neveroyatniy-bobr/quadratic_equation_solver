@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['quadraticsolve_0',['quadraticsolve',['../solver_8h.html#ac1827c11568ee2f0e7d68305f78fa06b',1,'QuadraticSolve(Equation eq, Solution *sol):&#160;solver.cpp'],['../solver_8cpp.html#ac1827c11568ee2f0e7d68305f78fa06b',1,'QuadraticSolve(Equation eq, Solution *sol):&#160;solver.cpp']]]
+  ['onetest_0',['onetest',['../test_8h.html#a30cd60fc41bed770cabfc85ab6dd7700',1,'OneTest(Test test):&#160;test.cpp'],['../test_8cpp.html#a30cd60fc41bed770cabfc85ab6dd7700',1,'OneTest(Test test):&#160;test.cpp']]],
+  ['output_1',['output',['../inputoutput_8h.html#a17a46203fe53061f8093750f0bfec922',1,'Output(Solution sol):&#160;inputoutput.cpp'],['../inputoutput_8cpp.html#a17a46203fe53061f8093750f0bfec922',1,'Output(Solution sol):&#160;inputoutput.cpp']]]
 ];

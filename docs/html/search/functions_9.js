@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['trytoleave_0',['trytoleave',['../app_8h.html#ac5aec481d542a65da6cb65db612ba7ed',1,'TryToLeave():&#160;app.cpp'],['../app_8cpp.html#ac5aec481d542a65da6cb65db612ba7ed',1,'TryToLeave():&#160;app.cpp']]]
+  ['scanequation_0',['scanequation',['../fsolve_8h.html#a684ac0e643811b4f997a161f9b338648',1,'ScanEquation(FILE *test_file, Equation *eq):&#160;fsolve.cpp'],['../fsolve_8cpp.html#a684ac0e643811b4f997a161f9b338648',1,'ScanEquation(FILE *test_file, Equation *eq):&#160;fsolve.cpp']]],
+  ['scantest_1',['scantest',['../test_8h.html#a4e6b933ace914bc36a9c2ae30289c889',1,'ScanTest(FILE *test_file, Test *test):&#160;test.cpp'],['../test_8cpp.html#a4e6b933ace914bc36a9c2ae30289c889',1,'ScanTest(FILE *test_file, Test *test):&#160;test.cpp']]],
+  ['solve_2',['solve',['../solver_8h.html#a9b6d96a7a52712c3e09609ea02855d6f',1,'Solve(Equation eq, Solution *sol):&#160;solver.cpp'],['../solver_8cpp.html#a9b6d96a7a52712c3e09609ea02855d6f',1,'Solve(Equation eq, Solution *sol):&#160;solver.cpp']]]
 ];
