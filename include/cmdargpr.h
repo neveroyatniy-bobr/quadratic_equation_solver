@@ -1,6 +1,7 @@
 #ifndef CMDARGPR_H_
 #define CMDARGPR_H_
 
+/// @brief Означает режим работы приложения
 enum WorkingMode
 {
     ui = 0,
@@ -11,6 +12,8 @@ enum WorkingMode
     hint = 5
 };
 
+/// @brief Вычисляет режим работы приложения в зависимости от аргументов командной строки
+/// @return Возвращает режим работы приложения в зависимости от аргументов командной строки
 enum WorkingMode CmdArgProcessor(int argc, char *argv[]);
 
 #endif // CMDARGPR_H_

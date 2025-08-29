@@ -37,8 +37,8 @@ int main(int argc, char *argv[])
 
     case help:
         printf("--test, -t: вызвать юнит-тесты Solve()\n\
-                --CmdSolve a b c, -c a b c: сразу решить уравнение с коэфицентами a, b, c\
-                --file filename, -f filename: решить уравнения из файла");
+                --CmdSolve a b c, -c a b c: сразу решить уравнение с коэфицентами a, b, c\n\
+                --file filename, -f filename: решить уравнения из файла\n");
         break;
 
     case hint:
