@@ -10,19 +10,19 @@ enum WorkingMode CmdArgProcessor(int argc, char *argv[])
     }
     else
     {
-        if (!strcmp(argv[1], "--test") || !strcmp(argv[1], "--t"))
+        if (!strcmp(argv[1], "--test") || !strcmp(argv[1], "-t"))
         {
             return argc == 2 ? test : hint;
         }
-        else if (!strcmp(argv[1], "--file") || !strcmp(argv[1], "--f"))
+        else if (!strcmp(argv[1], "--file") || !strcmp(argv[1], "-f"))
         {
             return argc == 3 ? file : hint;
         }
-        else if (!strcmp(argv[1], "--cmdsolve") || !strcmp(argv[1], "--c"))
+        else if (!strcmp(argv[1], "--cmdsolve") || !strcmp(argv[1], "-c"))
         {
             return argc == 5 ? cmd_sol : hint;
         }
-        else if (!strcmp(argv[1], "--help") || !strcmp(argv[1], "--h"))
+        else if (!strcmp(argv[1], "--help") || !strcmp(argv[1], "-h"))
         {
             return argc == 2 ? help : hint;
         }
