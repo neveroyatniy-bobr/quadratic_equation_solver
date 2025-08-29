@@ -5,6 +5,11 @@
 
 #include "solver.h"
 
+/**
+\file test.h
+\brief Содержит определения для тестов
+*/
+
 /// @brief Хранит тест
 struct Test
 {

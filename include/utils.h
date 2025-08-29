@@ -1,6 +1,11 @@
 #ifndef UTILS_H_
 #define UTILS_H_
 
+/**
+\file utils.h
+\brief Содержит вспомогательные определения
+*/
+
 /// @brief Константа, означающая точность сравнения double
 static const double EPSILONE = 1e-12;
 

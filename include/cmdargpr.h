@@ -1,6 +1,11 @@
 #ifndef CMDARGPR_H_
 #define CMDARGPR_H_
 
+/**
+\file cmdargpr.h
+\brief Содержит определения для обработки аргументов командной строки
+*/
+
 /// @brief Означает режим работы приложения
 enum WorkingMode
 {

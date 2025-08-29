@@ -3,6 +3,11 @@
 
 #include "solver.h"
 
+/**
+\file inputoutput.h
+\brief Содержит определения для ввода и вывода
+*/
+
 /// @brief Очищает буффер ввода
 void ClearBuffer();
 

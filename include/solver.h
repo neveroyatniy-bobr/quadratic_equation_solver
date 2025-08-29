@@ -1,6 +1,11 @@
 #ifndef SOLVER_H_
 #define SOLVER_H_
 
+/**
+\file solver.h
+\brief Содержит определения для решения уравнений
+*/
+
 /// @brief Обозначает количество корней уравнения
 enum Rootcount
 {

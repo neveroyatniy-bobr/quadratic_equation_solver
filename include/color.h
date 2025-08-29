@@ -1,6 +1,11 @@
 #ifndef COLOR_H_
 #define COLOR_H_
 
+/**
+\file .h
+\brief Содержит определения для цветов вывода в консоли
+*/
+
 // Regular text
 #define BLK "\e[0;30m"
 #define RED "\e[0;31m"

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['b_0',['b',['../structEquation.html#a2ca528c1ae5ec73cc926a327136cfc6b',1,'Equation']]],
+  ['bblk_1',['BBLK',['../color_8h.html#ab3bdb5557ea3a8f7ed80a55ad301e09c',1,'color.h']]],
+  ['bblu_2',['BBLU',['../color_8h.html#a9f40b3c1c240d5513da9f50685d5bf15',1,'color.h']]],
+  ['bcyn_3',['BCYN',['../color_8h.html#abd610b309fe5845f1e5fbd6666a22447',1,'color.h']]],
+  ['bgrn_4',['BGRN',['../color_8h.html#a003f38f51e5f6972a6a0796bda4ca11c',1,'color.h']]],
+  ['bhblk_5',['BHBLK',['../color_8h.html#ad0df2a06bd715233e93f52630d7ac90a',1,'color.h']]],
+  ['bhblu_6',['BHBLU',['../color_8h.html#abdcced5076a5280e2eb3ca4164dd06f5',1,'color.h']]],
+  ['bhcyn_7',['BHCYN',['../color_8h.html#a92895bcb6d037837b362c21ce02f9358',1,'color.h']]],
+  ['bhgrn_8',['BHGRN',['../color_8h.html#a43ac3967b70ffabac8e297291509d0a9',1,'color.h']]],
+  ['bhmag_9',['BHMAG',['../color_8h.html#a4803715200001bc1c5754fd0e01b3fb5',1,'color.h']]],
+  ['bhred_10',['BHRED',['../color_8h.html#ad1ed5807aac72daecdadc097787dcc4c',1,'color.h']]],
+  ['bhwht_11',['BHWHT',['../color_8h.html#a54535ac71843b6c3f28dc8ec104e823d',1,'color.h']]],
+  ['bhyel_12',['BHYEL',['../color_8h.html#a28233a8a5960b472441c17565d2827c9',1,'color.h']]],
+  ['blk_13',['BLK',['../color_8h.html#a6283768c836fd4a0f382514973bc3ff4',1,'color.h']]],
+  ['blkb_14',['BLKB',['../color_8h.html#a5bd5677083936088250881f96cab9f80',1,'color.h']]],
+  ['blkhb_15',['BLKHB',['../color_8h.html#af0f5cad4ce9edcba1fd65ffd05e9b69a',1,'color.h']]],
+  ['blu_16',['BLU',['../color_8h.html#add9307de87f38e77d336751e305886f6',1,'color.h']]],
+  ['blub_17',['BLUB',['../color_8h.html#a9214278790287807fafcedce015e5e2d',1,'color.h']]],
+  ['bluhb_18',['BLUHB',['../color_8h.html#aaf3a6b1d1acbdd2d9efdb841efda0fe3',1,'color.h']]],
+  ['bmag_19',['BMAG',['../color_8h.html#af1bdc3f8928aa1589ef44e3578a09464',1,'color.h']]],
+  ['bred_20',['BRED',['../color_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2',1,'color.h']]],
+  ['bwht_21',['BWHT',['../color_8h.html#ae528cad0e6c76be71eb66776599ec5d9',1,'color.h']]],
+  ['byel_22',['BYEL',['../color_8h.html#a9b526756196d7c0efa31bc8fe4e5f138',1,'color.h']]]
+];
